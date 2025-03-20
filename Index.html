@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .main-container {
+            background: linear-gradient(45deg, yellow, blue, red, orange);
+            height: 100%;
+            background: linear-gradient();
+            margin-left: -12px;
+            margin-right: -12px;
+            animation: color 10s ease-in-out;
+            background-size: 250%;
+        }
+
+        .head,
+        .home , .foot{
+            background-color: black;
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            font-size: medium;
+            font-weight: 300;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .home {
+            width: 5%;
+        }
+
+        header, footer {
+            display: flex;
+            justify-content: center;
+        }
+
+        .home {
+            display: flex;
+            align-items: center;
+            justify-content: end;
+
+        }
+
+        .front,
+        .back {
+            backface-visibility: hidden;
+        }
+
+        .front img {
+            width: 150px;
+            margin: 30px;
+            border-radius: 7px;
+            box-shadow: 7px 7px 0px black;
+        }
+
+        .book,
+        img {
+            transform-style: preserve-3d;
+            margin-bottom: 50px;
+        }
+
+        main {
+            display: flex;
+            margin-top: 100px;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .back {
+            color: black;
+            background-color: white;
+            height: 200px;
+            transform: rotateY(180deg);
+            margin-top: -270px;
+            width: 100%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gray;
+            
+            
+        }
+
+        .book:hover {
+            transition: 1s;
+            transform: rotateY(180deg);
+        }
+
+        .book {
+            transition: 1s;
+            margin-bottom: 100px;
+        }
+
+        main {
+            display: flex;
+        }
+        .img2{
+            height: 220px;
+        }
+    </style>
+
+</head>
+
+<body class="container-fluid">
+    <div class="main-container">
+        <header>
+            <div class="head">
+                Welcome to Book Showcase
+            </div>
+            <div class="home">
+                <button class="btn btn-info"><a href="Index.html">Home</a></button>
+            </div>
+        </header>
+
+        <main>
+
+            <div class="book">
+                <div class="front">
+                    <img src="public/image/Bhagwat3.jpg" alt="BhagwatGita">
+                </div>
+                <div class="back">
+                    <a href="Index1.html" style="text-decoration: none;">Click for Details</a> 
+                </div>
+            </div>
+
+
+            <div class="book">
+                <div class="front">
+                    <img class="img2" src="public/image/Ramayana2.jpg" alt="BhagwatGita">
+                </div>
+                <div class="back">
+               <a href="Index2.html"style="text-decoration: none; justify-content:center;">Click for Details</a>     
+                </div>
+            </div>
+
+
+            <div class="book">
+                <div class="front">
+                    <img src="public/image/Rig Ved.jpg" alt="BhagwatGita">
+                </div>
+                <div class="back">
+                    <a href="Index3.html" style="text-decoration: none;">Click for Details</a> 
+                </div>
+            </div>
+
+        </main>
+
+
+        <footer>
+            <div class="foot">
+                &copy;2025 Book Showcase : All Rights are Reserved
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

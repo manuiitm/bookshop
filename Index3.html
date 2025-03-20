@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            background: linear-gradient(45deg, yellow, blue, red, orange);
+            min-height: 100vh;
+            padding-bottom: 20px;
+        }
+
+        .head, .foot {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .home button {
+            background: #00b4db;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        .home button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 35rem;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .feedback {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            max-width: 500px;
+            margin: 40px auto;
+        }
+
+        .feedback h2 {
+            text-align: center;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .feedback form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .feedback form input, .feedback form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .feedback form input:focus, .feedback form textarea:focus {
+            border-color: #00b4db;
+            outline: none;
+        }
+
+        .feedback button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(to right, #00b4db, #0083b0);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .feedback button:hover {
+            background: linear-gradient(to right, #0083b0, #00b4db);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <div class="main-container">
+        <header>
+            <div class="head">Book Showcase: Book 3 Details</div>
+            <div class="home">
+                <button class="btn btn-info"><a href="Index.html">Home</a></button>
+            </div>
+        </header>
+
+        <main>
+            <div class="card">
+                <h5>Book 3: Exploring The Path of Spirituality</h5>
+                <img src="public/image/Rig Ved.jpg" alt="Book Image">
+                
+                <details class="details">
+                    <summary>Genre</summary>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Hymns (Samhita)</li>
+                        <li class="list-group-item">Philosophical and Mystical Texts</li>
+                    </ul>
+                </details>
+                <details class="details">
+                    <summary>Index Page</summary>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Chapter 1: Mandalas</li>
+                        <li class="list-group-item">Chapter 2: Suktas (Hymns)</li>
+                        <li class="list-group-item">Chapter 3: Anuvakas & Vargas</li>
+                    </ul>
+                </details>
+                <details class="details">
+                    <summary>
+                        Authors
+                    </summary>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Veda Vyasa</li>                            
+                </ul>
+            </details>
+            <details class="details">
+                <summary>
+                    Overview
+                </summary>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">The Rigveda is the oldest Hindu scripture, composed around 1500–1200 BCE in Sanskrit. It consists of 1,028 hymns praising deities like Indra, Agni, and Varuna, covering themes of cosmology, rituals, and philosophy. Traditionally compiled by Veda Vyasa, it is the foundation of Vedic literature and Hindu spirituality.</li>
+                                 
+            </ul>
+        </details>
+        <details class="details">
+            <summary>
+                Purchase Links
+            </summary>
+            <a href="https://www.amazon.in/Rigveda-Hindi-Raj-Bahadur-Pandey-ebook/dp/B01M9J1O4Y/ref=sr_1_8?crid=34CRT902VG88L&dib=eyJ2IjoiMSJ9.G-5fPtLxCNvca6FuQ34_Ythkhc9w1KTaIxg_KwRvmWWvxJJ-SeyJ3gOi8CLLWFlrAPH3JMDTl5ut3scG_eoEynggtwldbiVaUg7FXYkZkJS1MqTT5EJoA3oNE09xZ79FMgsvY09lZuF0NreiAm7NNDwxHZEPGdLk1tTWLa56RAOeXwuUlh6ur-bt5vFfqv3M-lAUmrrTcyfkZGiKzt06rhP5ZaVel3Tj0u3DQUJ-MZw.5lPsfEoQrydNgHAc7i9Y5j1pLaTbjEayxQX5Ijq9IdA&dib_tag=se&keywords=rig+veda&qid=1742324101&sprefix=rig+veda%2Caps%2C261&sr=8-8">Amazon</a>
+        </details>
+                
+            </div>
+        </main>
+
+        <div class="feedback">
+            <h2>Feedback Form</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+                
+                <label for="message">Feedback</label>
+                <textarea id="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+
+        <footer>
+            <div class="foot">&copy;2025 Book Showcase: All Rights Reserved</div>
+        </footer>
+    </div>
+</body>
+
+</html>

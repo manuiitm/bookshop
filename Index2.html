@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main-container {
+            background: linear-gradient(45deg, yellow, blue, red, orange);
+            min-height: 100vh;
+            padding-bottom: 20px;
+        }
+
+        .head, .foot {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .home button {
+            background: #00b4db;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+        }
+        .home button a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            width: 35rem;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .feedback {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            max-width: 500px;
+            margin: 40px auto;
+        }
+
+        .feedback h2 {
+            text-align: center;
+            color: black;
+            font-family: Arial, sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .feedback form label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .feedback form input, .feedback form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+        .feedback form input:focus, .feedback form textarea:focus {
+            border-color: #00b4db;
+            outline: none;
+        }
+
+        .feedback button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(to right, #00b4db, #0083b0);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .feedback button:hover {
+            background: linear-gradient(to right, #0083b0, #00b4db);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <div class="main-container">
+        <header>
+            <div class="head">Book Showcase: Book 2 Details</div>
+            <div class="home">
+                <button class="btn btn-info"><a href="Index.html">Home</a></button>
+            </div>
+        </header>
+
+        <main>
+            <div class="card">
+                <h5>Book 2: Exploring The Path of Spirituality</h5>
+                <img src="public/image/Ramayana2.jpg" alt="Book Image">
+                
+                <details class="details">
+                    <summary>Genre</summary>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Epic Poetry</li>
+                        <li class="list-group-item">Itihasa (Historical Narrative)</li>
+                        <li class="list-group-item">Religious and Philosophical Text</li>
+                    </ul>
+                </details>
+                <details class="details">
+                    <summary>Index Page</summary>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Chapter 1: Bala Kanda (Book of Childhood)</li>
+                        <li class="list-group-item">Chapter 2: Ayodhya Kanda (Book of Ayodhya)</li>
+                        <li class="list-group-item">Chapter 3: Kishkindha Kanda</li>
+                    </ul>
+                </details>
+                <details class="details">
+                    <summary>Authors</summary>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Maharishi Valmiki</li>
+                    </ul>
+                </details>
+                <details class="details">
+                    <summary>Overview</summary>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">The Ramayana is an ancient Hindu epic, traditionally attributed to Maharishi Valmiki. It narrates the life, exile, struggles, and triumph of Lord Rama, an avatar of Vishnu, and upholds the ideals of dharma (righteousness), devotion, and duty.</li>
+                    </ul>
+                </details>
+                <details class="details">
+                    <summary>Purchase Links</summary>
+                    <a href="https://www.amazon.in/Valmiki-Ramayana-Hindi-Press-Gorakhpur/dp/B09FZRWTNX">Amazon</a>
+                </details>
+            </div>
+        </main>
+
+        <div class="feedback">
+            <h2>Feedback Form</h2>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" required>
+                
+                <label for="message">Feedback</label>
+                <textarea id="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+
+        <footer>
+            <div class="foot">&copy;2025 Book Showcase: All Rights Reserved</div>
+        </footer>
+    </div>
+</body>
+
+</html>
